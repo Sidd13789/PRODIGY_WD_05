@@ -168,17 +168,17 @@ function updateForecast(data, unit, type) {
 // function to change weather icons
 function getIcon(condition) {
   if (condition === "partly-cloudy-day") {
-    return "icons/sun/27.png";
+    return "sun/27.png";
   } else if (condition === "partly-cloudy-night") {
-    return "icons/moon/15.png";
+    return "moon/15.png";
   } else if (condition === "rain") {
-    return "icons/rain/39.png";
+    return "rain/39.png";
   } else if (condition === "clear-day") {
-    return "icons/sun/26.png";
+    return "sun/26.png";
   } else if (condition === "clear-night") {
-    return "icons/moon/10.png";
+    return "moon/10.png";
   } else {
-    return "icons/sun/26.png";
+    return "sun/26.png";
   }
 }
 
@@ -187,17 +187,17 @@ function changeBackground(condition) {
   const body = document.querySelector("body");
   let bg = "";
   if (condition === "partly-cloudy-day") {
-    bg = "images/pc.jpg";
+    bg = "pc.jpg";
   } else if (condition === "partly-cloudy-night") {
-    bg = "images/pcn.jpg";
+    bg = "pcn.jpg";
   } else if (condition === "rain") {
-    bg = "images/rain.jpg";
+    bg = "rain.jpg";
   } else if (condition === "clear-day") {
-    bg = "images/cd.jpg";
+    bg = "cd.jpg";
   } else if (condition === "clear-night") {
-    bg = "images/cn.jpg";
+    bg = "cn.jpg";
   } else {
-    bg = "images/pc.jpg";
+    bg = "pc.jpg";
   }
   body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${bg})`;
 }
